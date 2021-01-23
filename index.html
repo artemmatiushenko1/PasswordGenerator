@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD GENERATOR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Password generator</h1>
+    <p>choose length</p>
+    <div class="btns-length">
+        <button class="btn regular" id="4" id="first">4</button>
+        <button class="btn regular" id="6">6</button>
+        <button class="btn regular" id="8">8</button>
+        <button class="btn regular" id="10">10</button>
+        <button class="btn regular" id="12">12</button>
+        <button class="btn regular" id="14">14</button>
+    </div>
+    <button class="run">RUN</button>
+    <div class="final">
+        <input class="result" readonly='true'></input>
+        <button class="copy"><i class="fa fa-clone" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <div class="modal hidden">
+        <button class="close"><i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <p class="modal-text">Make sure that you chose a length</p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

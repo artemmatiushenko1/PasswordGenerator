@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: #E8EDDF;
+    background: none;
+}
+
+body {
+    margin-top: 200px;
+    background-color: #242423;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #E8EDDF;
+}
+
+.run {
+    max-width: 300px;
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.btn {
+    height: 45px;
+    width: 45px;
+    margin-left: 15px;
+    border-radius: 50px;
+    border: none;
+}
+
+.run {
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 60px;
+}
+
+.copy {
+    border: none;
+    background: none;
+    color: #C4C4C4;
+}
+
+.btn:hover {
+    background: #242423;
+    box-shadow: 1px 1px 2px rgba(48, 48, 47, 0.3),
+        -1px -1px 2px rgba(24, 24, 23, 0.5),
+        inset -1px 1px 2px rgba(24, 24, 23, 0.2),
+        inset 1px -1px 2px rgba(24, 24, 23, 0.2),
+        inset -1px -1px 2px rgba(48, 48, 47, 0.9),
+        inset 1px 1px 3px rgba(24, 24, 23, 0.9);
+    transition: all 0.5s;
+}
+
+.active {
+    background: #242423;
+    box-shadow: 1px 1px 2px rgba(48, 48, 47, 0.3),
+        -1px -1px 2px rgba(24, 24, 23, 0.5),
+        inset -1px 1px 2px rgba(24, 24, 23, 0.2),
+        inset 1px -1px 2px rgba(24, 24, 23, 0.2),
+        inset -1px -1px 2px rgba(48, 48, 47, 0.9),
+        inset 1px 1px 3px rgba(24, 24, 23, 0.9);
+}
+
+.regular {
+    background: linear-gradient(135deg, #262625 0%, #222221 100%);
+    box-shadow: -2px 2px 4px rgba(27, 27, 26, 0.2),
+        2px -2px 4px rgba(27, 27, 26, 0.2),
+        -2px -2px 4px rgba(45, 45, 44, 0.9),
+        2px 2px 5px rgba(27, 27, 26, 0.9),
+        inset 1px 1px 2px rgba(45, 45, 44, 0.3),
+        inset -1px -1px 2px rgba(27, 27, 26, 0.5);
+    transition: all 0.2s;
+}
+
+.btn {
+    color: #E8EDDF;
+    font-weight: 400;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.run {
+    font-size: 15px;
+    font-weight: 400;
+    color: #242423;
+    background-color: #E8EDDF;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.run:hover {
+    background-color: #C4C4C4;
+}
+
+.btns-length {
+    margin-bottom: 20px;
+    padding-right: 15px;
+}
+
+.result {
+    width: 400px;
+    height: 45px;
+    background: #242423;
+    box-shadow: 1px 1px 2px rgba(47, 47, 46, 0.3),
+        -1px -1px 2px rgba(25, 25, 25, 0.5),
+        inset -1px 1px 2px rgba(25, 25, 25, 0.2),
+        inset 1px -1px 2px rgba(25, 25, 25, 0.2),
+        inset -1px -1px 2px rgba(47, 47, 46, 0.9),
+        inset 1px 1px 3px rgba(25, 25, 25, 0.9);
+    padding: 7px 12px 7px 12px;
+    outline: none;
+    border: none;
+    letter-spacing: 0.08em;
+    font-weight: 400;
+    font-size: 20px;
+    color: #E8EDDF;
+}
+
+.final {
+    position: relative;
+}
+
+.copy {
+    cursor: pointer;
+    outline: none;
+    top: 35%;
+    left: 93%;
+    position: absolute;
+
+}
+
+.copy:hover {
+    color: white;
+}
+
+.inner-result {
+    letter-spacing: 0.08em;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.199);
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    backdrop-filter: blur(10px);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 20%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    text-align: center;
+    padding-top: 55px;
+}
+
+.modal-text {
+    color: #242423;
+}
+
+.close {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #242423;
+}
+
+.hidden {
+    display: none;
+}
